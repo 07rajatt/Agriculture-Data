@@ -1,3 +1,4 @@
+
 # Agriculture-Data-Dashboard
 
 
@@ -11,9 +12,18 @@ The agriculture sector in regions like Karnataka generates extensive data on wea
 
 Through visually intuitive and dynamic visualizations, this tool supports data-informed decisions to boost yields, mitigate risks from weather variability, and promote eco-friendly agriculture.
 
+## Tech Stack
+
+- **Data Source:** Snowflake (hosted on AWS)
+- **Storage & Access:** AWS S3 Bucket with IAM Roles
+- **Visualization:** Power BI Desktop & Service
+- **Transformations:** SQL in Snowflake, DAX in Power BI
+
 ## Steps Followed
 
 * **Step 1**: Connected to Snowflake database hosted on AWS via Power BI Desktop and imported the agriculture dataset, encompassing tables for weather metrics, crop yields, seasons, and locations in Karnataka. AWS S3 bucket and IAM role were used for secure data staging (see screenshot below for setup).
+
+  - **AWS Overview**
 
   ![AWS Setup Screenshot](images/s3.png)
   ---
@@ -22,6 +32,11 @@ Through visually intuitive and dynamic visualizations, this tool supports data-i
   ![AWS Setup Screenshot](images/created.png)
   ---
 
+  - **Snowflake Overiew**
+
+    ![AWS Setup Screenshot](images/snowflake.png)
+     
+ ---    
 * **Step 2**: Executed data profiling in Power Query Editor by enabling column distribution, quality profiling, and full-dataset analysis to detect outliers in rainfall and yield data.
 
 * **Step 3**: Reviewed for nulls and duplicates; minor gaps (<0.8%) in humidity records from sensor issues were preserved to maintain temporal integrity.
@@ -71,7 +86,31 @@ Stable bar charts for average humidity by year (~56% consistent), season (all ~5
 Bar charts for average yield by year (peaking at 28k kg/ha in 2010), season (Rabi highest at 24k), crops (Cotton leads at 51k), and locations (Kodagu at 28k). New visuals segment by Year_Group (Y3 shows yield growth) and Rainfall_Groups (Medium drives 60% of high yields).  
 ![Yield Analysis Desktop](images/4.png)
 
-## Conclusion
+# Insights
+Following inferences can be drawn from the dashboard:
+
+**[1] Rainfall Trends**
+
+Annual rainfall increases from ~3,083 mm (2005) to ~3,199 mm (2020).
+Kharif season highest at 3,087 mm; Arecanut crop at 3,500 mm; Chikmagalur location at 3,800 mm.
+
+**[2] Temperature Patterns**
+
+Peaks at ~73°C in 2015; Kharif/Zaid seasons at 72°C.
+Ginger crop highest at 79°C; Bangalore location outlier at 152 (possible aggregate).
+
+**[3] Humidity Stability**
+
+Consistent at 56% across all years, seasons, crops, and most locations (Bangalore at 55%).
+
+**[4] Yield Variations**
+
+Peaks at 28,000 kg/ha in 2010; Rabi season highest at 24,000 kg/ha.
+Cotton leads crops at 51,000 kg/ha; Kodagu location at 28,000 kg/ha.
+
+These highlight Rabi's productivity edge and regional hotspots like Kodagu.
+
+# Conclusion
 
 This Agriculture Data Dashboard offers a holistic lens on weather-crop dynamics, enhanced by Year_Group and Rainfall_Groups for temporal and environmental segmentation. It empowers:
 
