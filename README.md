@@ -70,20 +70,19 @@ Through visually intuitive and dynamic visualizations, this tool supports data-i
 
 ## Power BI Desktop View
 
-**Rainfall Analysis Page**:  
-Features bar charts for average rainfall by year (2005-2020, peaking at ~3,200 mm in 2019), season (Kharif highest at ~3,087 mm), crops (Arecanut leads at 3.5k mm), and locations (Chikmagalur tops at 3.8k mm). Updated slicers include Year_Group and Rainfall_Groups for grouped filtering.  
+**Rainfall Analysis Page**:   
 ![Rainfall Analysis Desktop](images/1.png)
 
 **Temperature Analysis Page**:  
-Bar charts showing average temperature by year (rising trend to ~73°C in 2015), season (Kharif and Zaid at 72°C), crops (Ginger highest at 79°C), and locations (Bangalore at 152? – note: scale may indicate combined metrics or °F; Davangere at 68°C).  
+
 ![Temperature Analysis Desktop](images/2.png)
 
 **Humidity Analysis Page**:  
-Stable bar charts for average humidity by year (~56% consistent), season (all ~56%), crops (uniform at 55-56%), and locations (all ~55-56%, Bangalore lowest at 55%).  
+
 ![Humidity Analysis Desktop](images/3.png)
 
 **Yield Analysis Page**:  
-Bar charts for average yield by year (peaking at 28k kg/ha in 2010), season (Rabi highest at 24k), crops (Cotton leads at 51k), and locations (Kodagu at 28k). New visuals segment by Year_Group (Y3 shows yield growth) and Rainfall_Groups (Medium drives 60% of high yields).  
+  
 ![Yield Analysis Desktop](images/4.png)
 
 # Insights
@@ -97,7 +96,7 @@ Kharif season highest at 3,087 mm; Arecanut crop at 3,500 mm; Chikmagalur locati
 **[2] Temperature Patterns**
 
 Peaks at ~73°C in 2015; Kharif/Zaid seasons at 72°C.
-Ginger crop highest at 79°C; Bangalore location outlier at 152 (possible aggregate).
+Ginger crop highest at 79°C; 
 
 **[3] Humidity Stability**
 
